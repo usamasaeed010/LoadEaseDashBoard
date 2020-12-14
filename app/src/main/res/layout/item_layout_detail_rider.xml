@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TableRow>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic_img"
+            android:text="Pic"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_home_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:text="123456"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_column="2"/>
+
+        <ImageView
+            android:id="@+id/ride_licence"
+            android:text="Ride"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:src="@drawable/ic_home_black_24dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_column="1"/>
+
+        <ImageView
+            android:id="@+id/doc_car"
+            android:layout_weight="1"
+            android:text="Ride"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:src="@drawable/ic_home_black_24dp"
+            android:padding="5dp"
+            android:layout_column="1"/>
+
+      <Button
+          android:id="@+id/approved"
+          android:text="Approved"
+          android:layout_gravity="center_vertical"
+          android:padding="5dp"
+          android:background="@color/red"
+          android:layout_weight="1"
+          android:textStyle="bold"/>
+
+    </TableRow>
+
+
+</TableLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="@color/lightgray"
+    tools:context=".LoginActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10sp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/top_shape"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Mr Arsal"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.6"
+        android:weightSum="7"
+        android:orientation="vertical"
+        android:background="@drawable/cardview_background">
+
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:weightSum="2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:layout_marginHorizontal="10dp"/>
+
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:maxLines="1"
+                android:hint="helo@gmail.com"
+                android:paddingHorizontal="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/ed_name"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/lightgray"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"/>
+
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:maxLines="1"
+                android:hint="Enter Password"
+                android:paddingHorizontal="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/ed_password"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/lightgray"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"/>
+
+
+        <TextView
+            android:id="@+id/txt_driver_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:background="@drawable/background_card_view"
+            android:layout_marginHorizontal="80dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:text="Don't have an account?"
+                android:gravity="center|right"
+                android:textSize="15sp"
+                android:textColor="@color/lightgray"/>
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/lightgray"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
