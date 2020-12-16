@@ -74,8 +74,6 @@
 
             </RelativeLayout>
 
-
-
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -123,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:text="Online Vehicles"
                 android:textColor="@color/lightgray"/>
+
 
         </LinearLayout>
 
@@ -408,6 +407,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vehicles"
+                android:layout_gravity="center"
                 android:textSize="15sp"
                 android:textColor="@color/lightgray"
                 />
@@ -530,7 +530,7 @@
                             android:text="In Process"
                             android:textColor="@color/red"
                             android:layout_marginHorizontal="4dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -539,7 +539,7 @@
                             android:textColor="@color/red"
                             android:layout_marginTop="10dp"
                             android:layout_marginHorizontal="12dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
 
                     </LinearLayout>
@@ -557,7 +557,7 @@
                             android:text="Completed"
                             android:textColor="@color/skycolor"
                             android:layout_marginHorizontal="4dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -566,7 +566,7 @@
                             android:textColor="@color/skycolor"
                             android:layout_marginTop="10dp"
                             android:layout_marginHorizontal="12dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
 
                     </LinearLayout>
@@ -574,7 +574,7 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:weightSum="2"
                         android:layout_marginTop="12sp"
                         android:orientation="vertical">
@@ -585,7 +585,7 @@
                             android:text="Cancelled"
                             android:textColor="@color/dark_gray"
                             android:layout_marginHorizontal="4dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
 
                         <TextView
@@ -595,7 +595,7 @@
                             android:textColor="@color/dark_gray"
                             android:layout_marginTop="10dp"
                             android:layout_marginHorizontal="12dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
 
                     </LinearLayout>
@@ -657,7 +657,7 @@
                             android:text="In Process"
                             android:textColor="@color/red"
                             android:layout_marginHorizontal="4dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -667,7 +667,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="12dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
 
                     </LinearLayout>
@@ -685,7 +685,7 @@
                             android:text="Cancelled"
                             android:textColor="@color/dark_gray"
                             android:layout_marginHorizontal="4dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -695,7 +695,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="12dp"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
                     </LinearLayout>
 
