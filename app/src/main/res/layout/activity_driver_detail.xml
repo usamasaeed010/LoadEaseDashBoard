@@ -54,19 +54,6 @@
                         app:civ_border_width="2dp"
                         app:civ_border_color="#FF000000"/>
 
-                    <ImageView
-                        android:id="@+id/adddp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="right|bottom"
-                        android:layout_marginBottom="15dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/backbg"
-                        android:src="@drawable/ic_baseline_add_circle_outline_24"
-                        app:tint="@color/black"
-                        android:layout_marginEnd="3dp"
-                        />
-
                 </FrameLayout>
 
                 <TextView
@@ -110,7 +97,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="130dp"
             android:padding="5dp"
             android:background="@drawable/backbg2"
             android:layout_marginVertical="10dp">
@@ -124,6 +111,8 @@
                 android:textStyle="bold"
                 android:textColor="@color/lightgray"
                 android:textSize="19sp"/>
+
+
 
 
             <TextView
@@ -145,13 +134,33 @@
                 android:layout_below="@id/person_detail_txt"
                 android:textColor="@color/black"/>
 
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender :"
+                android:textStyle="bold"
+                android:layout_below="@id/name"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/gender_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/name"
+                android:text="Male"
+                android:layout_below="@id/names_txt"
+                android:textColor="@color/black"/>
+
             <TextView
                 android:id="@+id/Email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email :"
                 android:textStyle="bold"
-                android:layout_below="@+id/name"
+                android:layout_below="@+id/gender_txt"
                 android:layout_marginHorizontal="10dp"
                 android:textColor="@color/black"/>
 
@@ -161,7 +170,26 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/Email"
                 android:text="Usaeed000@gmail.com"
-                android:layout_below="@+id/names_txt"
+                android:layout_below="@+id/gender_txt"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/ph_num_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number :"
+                android:textStyle="bold"
+                android:layout_below="@+id/Email"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/ph_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ph_num_txt"
+                android:text="03001234567"
+                android:layout_below="@+id/email_txt"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -170,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:text="Date of Birth :"
                 android:textStyle="bold"
-                android:layout_below="@+id/Email"
+                android:layout_below="@+id/ph_num"
                 android:layout_marginHorizontal="10dp"
                 android:textColor="@color/black"/>
 
@@ -180,29 +208,12 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/dob"
                 android:text="02.02.1999"
-                android:layout_below="@+id/email_txt"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Status :"
-                android:textStyle="bold"
-                android:layout_below="@+id/dob"
-                android:layout_marginHorizontal="10dp"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/status_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/status"
-                android:text="Approved"
-                android:layout_below="@+id/dob"
+                android:layout_below="@+id/ph_num"
                 android:textColor="@color/black"/>
 
         </RelativeLayout>
+
+
 
 
         <RelativeLayout
@@ -277,73 +288,117 @@
                 android:layout_below="@id/year_prod_txt"
                 android:textColor="@color/black"/>
 
-
             <TextView
-                android:id="@+id/Cnic_pic_txt"
+                android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CNIC picture :"
+                android:text="Status :"
                 android:textStyle="bold"
                 android:layout_below="@id/num_plate"
                 android:layout_marginHorizontal="10dp"
                 android:textColor="@color/black"/>
 
-
-            <ImageView
-                android:id="@+id/cnic_pic"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/bannar_slider"
-                android:layout_marginVertical="8dp"
-                android:layout_below="@id/Cnic_pic_txt"/>
-
-
             <TextView
-                android:id="@+id/Licence_pic"
+                android:id="@+id/status_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Licence picture :"
-                android:textStyle="bold"
-                android:layout_below="@id/cnic_pic"
-                android:layout_marginHorizontal="10dp"
+                android:layout_toEndOf="@+id/num_plate"
+                android:text="Approved"
+                android:layout_below="@id/num_plate_txt"
                 android:textColor="@color/black"/>
 
 
-            <ImageView
-                android:id="@+id/Licence_pic_img"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/bannar_slider"
-                android:layout_marginVertical="10dp"
-                android:layout_below="@id/Licence_pic"/>
 
-
-            <TextView
-                android:id="@+id/Vehicle_pic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vehicle picture :"
-                android:textStyle="bold"
-                android:layout_below="@id/Licence_pic_img"
-                android:layout_marginHorizontal="10dp"
-                android:textColor="@color/black"/>
-
-
-            <ImageView
-                android:id="@+id/Vehicle_pic_img"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/bannar_slider"
-                android:layout_marginVertical="10dp"
-                android:layout_below="@id/Vehicle_pic"/>
 
         </RelativeLayout>
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:background="@drawable/backbg2"
             android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/doc_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Document Information"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/lightgray"
+                android:gravity="center"/>
+
+
+
+                        <TextView
+                            android:id="@+id/Cnic_pic_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CNIC picture :"
+                            android:textStyle="bold"
+                            android:layout_below="@id/doc_info"
+                            android:layout_marginHorizontal="10dp"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:id="@+id/cnic_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bannar_slider"
+                            android:layout_marginVertical="8dp"
+                            android:layout_below="@id/Cnic_pic_txt"/>
+
+
+                        <TextView
+                            android:id="@+id/Licence_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Licence picture :"
+                            android:textStyle="bold"
+                            android:layout_below="@id/cnic_pic"
+                            android:layout_marginHorizontal="10dp"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:id="@+id/Licence_pic_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bannar_slider"
+                            android:layout_marginVertical="10dp"
+                            android:layout_below="@id/Licence_pic"/>
+
+
+                        <TextView
+                            android:id="@+id/Vehicle_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle picture :"
+                            android:textStyle="bold"
+                            android:layout_below="@id/Licence_pic_img"
+                            android:layout_marginHorizontal="10dp"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:id="@+id/Vehicle_pic_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bannar_slider"
+                            android:layout_marginVertical="10dp"
+                            android:layout_below="@id/Vehicle_pic"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/backbg2">
 
             <TextView
@@ -357,7 +412,7 @@
                 android:textColor="@color/lightgray"/>
 
             <EditText
-                android:id="@+id/ed_txt"
+                android:id="@+id/ed_txt_block"
                 android:layout_width="200dp"
                 android:layout_height="80dp"
                 android:hint="Comment"
@@ -365,29 +420,22 @@
                 android:layout_below="@id/block_driver"/>
 
             <Button
-                android:id="@+id/txt_driver_name"
+                android:id="@+id/confirm_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="Sign In"
-                android:layout_margin="13dp"
-                android:layout_toRightOf="@+id/ed_txt"
-                android:layout_below="@id/block_driver"
+                android:textSize="10sp"
+                android:text="Confirm"
+                android:layout_marginTop="20sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toEndOf="@+id/ed_txt_block"
                 android:textStyle="bold"
+                android:layout_below="@+id/block_driver"
+                android:layout_alignParentEnd="true"
                 android:textColor="@color/white"
                 android:background="@drawable/background_card_view" />
 
-
-
-
         </RelativeLayout>
 
-
-
-
-
-
         </LinearLayout>
-
 
 </ScrollView>
